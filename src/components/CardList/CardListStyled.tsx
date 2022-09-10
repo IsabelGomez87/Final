@@ -4,14 +4,15 @@ import styles from "../../styles/styles";
 const CardListStyled = styled.div`
   ul {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 35px;
     justify-content: space-between;
-    padding: 0;
-  }
-  li {
-    list-style: none;
+    padding: 20px;
+
+    @media (min-width: 1000px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
   .cards-list__title {

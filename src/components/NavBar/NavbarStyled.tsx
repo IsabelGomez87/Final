@@ -30,6 +30,10 @@ const NavbarStyled = styled.div`
         }
       }
     }
+
+    .navbar-list__link:hover {
+      background-color: ${styles.colors.globalDarkGreen};
+    }
   }
 `;
 

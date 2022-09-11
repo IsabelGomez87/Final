@@ -15,6 +15,18 @@ const ButtonStyled = styled.button`
   &.greenButton {
     background-color: ${styles.colors.globalGreen};
   }
+
+  &.redButton {
+    background-color: ${styles.colors.globalRed};
+  }
+
+  &.greenButton:hover {
+    background-color: ${styles.colors.globalDarkGreen};
+  }
+
+  &.redButton:hover {
+    background-color: ${styles.colors.globalRedHover};
+  }
 `;
 
 export default ButtonStyled;

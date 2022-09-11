@@ -14,10 +14,21 @@ const DetailedCardStyled = styled.div`
       justify-content: space-between;
     }
 
-    .details-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    .generic {
+      @media (min-width: 1000px) {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        justify-content: space-between;
+      }
+
+      .details-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 22px;
+        gap: 20px;
+      }
     }
 
     .details-group {
@@ -47,10 +58,26 @@ const DetailedCardStyled = styled.div`
     .details-values {
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
-      gap: 20px 68px;
-      justify-content: start;
       margin: 20px 0;
+
+      .details-group {
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+
+    .details-values > li:nth-child(1) {
+      margin-right: 40px;
+    }
+
+    .details-values > li:nth-child(2) {
+      margin-right: 40px;
+    }
+
+    .details-values > li:nth-child(3) {
+      margin-right: 0;
     }
 
     .buttons-container {

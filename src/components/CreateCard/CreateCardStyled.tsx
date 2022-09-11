@@ -35,7 +35,8 @@ const CreateCardStyled = styled.div`
       border-bottom: 1px solid ${styles.colors.darkButtonHover};
     }
 
-    .custom-file-upload {
+    .custom-file-upload,
+    &.select > select {
       box-shadow: 1px 1px 1px ${styles.colors.backgroundDark},
         0px 0px 1px #0d0d0d;
       border: 1px solid ${styles.colors.backgroundDark};
@@ -44,6 +45,7 @@ const CreateCardStyled = styled.div`
       cursor: pointer;
       height: 50px;
       padding: 10px;
+      font-family: "Poppins", sans-serif;
     }
 
     input[type="range"] {

@@ -8,6 +8,7 @@ const NotFoundPageStyled = styled.div`
   background-color: #2b663d;
   color: white;
   min-height: calc(100vh - 170px);
+  overflow: hidden;
 
   .page-image {
     margin-left: 50px;

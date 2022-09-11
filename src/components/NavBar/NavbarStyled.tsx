@@ -31,7 +31,8 @@ const NavbarStyled = styled.div`
     }
 
     .navbar-list__link:hover {
-      background-color: ${styles.colors.globalDarkGreen};
+      color: ${styles.colors.backgroundDark};
+      font-weight: 700;
     }
   }
 `;

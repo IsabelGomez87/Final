@@ -34,7 +34,7 @@ const DetailedCard = ({ card }: DetailedCardProps): JSX.Element => {
                 <span className="details-group-content">{card.overall}</span>
               </li>
             </div>
-            <div className="details-info">
+            <div className="details-info images">
               <li key="nacionallity" className="details-group">
                 <span className="details-group-title">NATIONALLITY</span>
                 <span
@@ -106,7 +106,7 @@ const DetailedCard = ({ card }: DetailedCardProps): JSX.Element => {
           <Button
             isDisabled={false}
             type={"submit"}
-            className="greenButton"
+            className="redButton"
             actionOnclick={() => {}}
             buttonText={"DELETE"}
           ></Button>

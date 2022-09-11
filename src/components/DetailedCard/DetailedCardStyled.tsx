@@ -31,6 +31,13 @@ const DetailedCardStyled = styled.div`
       }
     }
 
+    .images {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
     .details-group {
       display: flex;
       flex-direction: column;
@@ -48,10 +55,10 @@ const DetailedCardStyled = styled.div`
       font-weight: 600;
 
       &.renderImage {
-        width: 80px;
-        height: 55px;
+        width: 140px;
+        height: 66px;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
       }
     }
 
@@ -59,6 +66,14 @@ const DetailedCardStyled = styled.div`
       display: flex;
       flex-direction: row;
       margin: 20px 0;
+
+      @media (min-width: 1000px) {
+        width: 70%;
+
+        @media (min-width: 1000px) {
+          margin: 0 0 20px 0;
+        }
+      }
 
       .details-group {
         flex: 1 1 100%;
@@ -84,6 +99,15 @@ const DetailedCardStyled = styled.div`
       display: flex;
       flex-direction: column;
       gap: 20px 0;
+      padding-top: 20px;
+
+      @media (min-width: 1000px) {
+        padding-top: 40px;
+      }
+    }
+
+    @media (min-width: 1000px) {
+      padding: 80px;
     }
   }
 `;

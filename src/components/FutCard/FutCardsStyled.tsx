@@ -13,6 +13,7 @@ const FutCardStyled = styled.div`
     clip-path: url("#svgPath");
     display: block;
     opacity: 1;
+    cursor: pointer;
 
     .card-inner {
       position: absolute;

@@ -6,7 +6,7 @@ const DetailedCardStyled = styled.div`
     background-color: ${styles.colors.backgroundDark};
     padding: 20px;
     color: ${styles.colors.backgroundLight};
-    height: 100vh;
+    min-height: calc(100vh - 170px);
 
     .details-top {
       display: flex;
@@ -100,14 +100,11 @@ const DetailedCardStyled = styled.div`
       flex-direction: column;
       gap: 20px 0;
       padding-top: 20px;
-
-      @media (min-width: 1000px) {
-        padding-top: 40px;
-      }
     }
 
     @media (min-width: 1000px) {
-      padding: 80px;
+      padding: 40px 80px;
+      min-height: calc(100vh - 230px);
     }
   }
 `;

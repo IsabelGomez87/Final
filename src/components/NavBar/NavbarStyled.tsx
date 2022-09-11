@@ -2,12 +2,11 @@ import styled from "styled-components";
 import styles from "../../styles/styles";
 
 const NavbarStyled = styled.div`
-  background-color: ${styles.colors.globalGreen};
-
-  color: white;
-  font-size: 15px;
-
   .navbar {
+    background-color: ${styles.colors.globalGreen};
+    color: white;
+    font-size: 15px;
+    height: 70px;
     display: flex;
     justify-content: center;
 
